@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DotGothic16', sans-serif;
+        }
+
+        .container {
+            width: 920px;
+            border: 3px solid orange;
+            margin: auto;
+            /*Center Allignment*/
+            background-color: sandybrown;
+        }
+
+        .item {
+            border: 3px solid greenyellow;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(24, 236, 240);
+        }
+
+        #fruits {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            /* if clear is given as left then left element doesnot overlap but if clear is both then neither left nor right element overlap */
+            width: 100%;
+        }
+
+        /* #games {
+            float: left;
+            clear: both;
+            /* if clear is given as left then left element doesnot overlap but if clear is both then neither left nor right element overlap */
+                 /*  width: 100%;
+             } */
+
+        h1 {
+            margin: auto;
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Srimany Market</h1>
+        <div id="fruits" class="item">
+            <h3>
+                <center>Fruits</center>
+            </h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae
+                dignissimos, ratione ut sit fugit ea tempora ipsam? Deserunt distinctio fugiat recusandae voluptas
+                accusamus illo accusantium atque blanditiis perspiciatis cum?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Adipisci quis expedita atque similique dolore nulla, cupiditate non. Perferendis,
+                deleniti hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ipsum suscipit blanditiis
+                nam natus quo necessitatibus nemo aliquid commodi omnis? Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Esse quia dicta eum quibusdam! Qui labore vitae illum aperiam minus officia maxime
+                corporis ipsa, ut quaerat harum repudiandae, tenetur nostrum asperiores.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>
+                <center>Computer</center>
+            </h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae
+                dignissimos, ratione ut sit fugit ea tempora ipsam? Deserunt distinctio fugiat recusandae voluptas
+                accusamus illo accusantium atque blanditiis perspiciatis cum?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus ipsum magni ex aliquam dignissimos omnis ipsa eligendi repellat maxime impedit.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dicta eveniet ut incidunt reiciendis
+                nostrum cumque, nihil nobis iure veniam deleniti officia libero maxime esse. Est eveniet accusantium
+                assumenda culpa.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>
+                <center>Stationary</center>
+            </h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                recusandae dignissimos, ratione ut sit fugit ea tempora ipsam? Deserunt distinctio fugiat recusandae
+                voluptas accusamus illo accusantium atque blanditiis perspiciatis cum?</p>
+        </div>
+            <div id="gmaes" class="item">
+                <h3>Glasses</h3>
+                <p id="gamespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                    quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                    distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+            </div>
+    </div>
+</body>
+
+</html>
